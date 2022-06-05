@@ -86,23 +86,23 @@ elSportForm.addEventListener("submit", (evt) => {
   const sportInputValue = elSportInput.value;
 
   if (sportInputValue >= 5 && sportInputValue <= 30) {
-    elYes.classList.add("text-green");
-    elNo.classList.remove("text-red");
+    elYes.classList.add("text-primary");
+    elNo.classList.remove("text-danger");
   } else {
-    elNo.classList.add("text-red");
-    elYes.classList.remove("text-green");
+    elNo.classList.add("text-danger");
+    elYes.classList.remove("text-primary");
   }
 
   if (elSportCheck1.checked) {
-    elNo.classList.add("text-red");
-    elYes.classList.remove("text-green");
+    elNo.classList.add("text-danger");
+    elYes.classList.remove("text-primary");
   }
 
   if (elSportCheck2.checked && elSportCheck1.checked) {
-    elYes.classList.add("text-green");
-    elNo.classList.remove("text-red");
+    elYes.classList.add("text-primary");
+    elNo.classList.remove("text-danger");
   } else if (sportInputValue <= 5 && elSportCheck2.checked) {
-    elYes.classList.remove("text-green");
-    elNo.classList.add("text-red");
+    elYes.classList.remove("text-primary");
+    elNo.classList.add("text-danger");
   }
 });

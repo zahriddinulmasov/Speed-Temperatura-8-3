@@ -132,14 +132,16 @@
 
       <!-- SPORT -->
 
-      <div class="sport">
-        <h2 class="text-primary">Yugurishga chikamizmi?</h2>
+      <div class="sport text-center">
+        <h2 class="text-primary fs-1">Yugurishga chikamizmi?</h2>
         <h1><span class="yes">HA</span> / <span class="no">YO'Q</span></h1>
         <form class="sport__form">
-          <div class="">
-            <label for="exampleInputNumber3">Havo harorati:</label>
+          <div class="d-flex justify-content-center">
+            <label class="text-danger fw-bolder fs-3" for="exampleInputNumber3"
+              >Havo harorati:</label
+            >
             <input
-              class="sport__input"
+              class="sport__input form-control w-25 ms-1"
               type="number"
               id="exampleInputNumber3"
               aria-describedby="numberHelp"
@@ -147,25 +149,31 @@
             />
           </div>
 
-          <div class="form-check">
+          <div class="form-check d-flex justify-content-center">
             <input
-              class="sport__check form-check-input"
+              class="sport__check1 form-check-input"
               type="checkbox"
               value=""
               id="flexCheckDefault"
             />
-            <label class="form-check-label" for="flexCheckDefault">
+            <label
+              class="form-check-label sport__check1 ms-2 fw-bolder"
+              for="flexCheckDefault"
+            >
               Yomg'ir yog'ayaptimi?
             </label>
           </div>
-          <div class="form-check">
+          <div class="form-check d-flex justify-content-center">
             <input
-              class="sport__check form-check-input"
+              class="sport__check2 form-check-input"
               type="checkbox"
               value=""
               id="flexCheckChecked"
             />
-            <label class="form-check-label" for="flexCheckChecked">
+            <label
+              class="form-check-label sport__check2 ms-2 fw-bolder"
+              for="flexCheckChecked"
+            >
               Trenajor zali ochiqmi?
             </label>
           </div>
